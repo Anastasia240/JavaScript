@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C:\Users\Anastasia\html\css\JavaScript\2.1 уровень\9.html</title>
+</head>
+
+<body>
+    <i class="green">Тут текст НЕ должен быть зеленым</i>
+    <i>Здесь текст сделайте зеленым</i>
+    <i class="green">Тут текст НЕ должен быть зеленым</i>
+    <i>А здесь текст сделайте зеленым</i>
+
+    <script>
+        'use strict';
+        let iElems = document.querySelectorAll('i');
+        iElems.forEach(function (i) {
+            i.classList.toggle('green');
+        });
+    </script>
+</body>
+
+</html>

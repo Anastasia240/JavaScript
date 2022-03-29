@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C:\Users\Anastasia\html\css\JavaScript\2.1 уровень\8.html</title>
+</head>
+
+<body>
+    <b>Lorem, ipsum.</b>
+    <b class="sign">Lorem, ipsum.</b>
+    <b class="sign">Lorem, ipsum.</b>
+    <b>Lorem, ipsum.</b>
+
+    <script>
+        'use strict';
+        let bElems = document.querySelectorAll('b');
+        bElems.forEach(function (b) {
+            if (!b.classList.contains('sign')) {
+                b.classList.add('sign');
+            }
+        });
+    </script>
+</body>
+
+</html>

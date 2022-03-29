@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C:\Users\Anastasia\html\css\JavaScript\2.1 уровень\2.html</title>
+</head>
+
+<body>
+    <h3 class="one">Заголовок</h3>
+    <a class="one" href="#">Ссылка</a>
+    <p class="one">Параграф</p>
+
+
+    <script>
+        'use strict';
+        let ones = document.getElementsByClassName('one');
+        for (let i = 0; i < ones.length; i++) {
+            console.log(ones[i].tagName);
+        }
+    </script>
+</body>
+
+</html>

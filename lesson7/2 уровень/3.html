@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C:\Users\Anastasia\html\css\JavaScript\2 уровень\3.html</title>
+</head>
+
+<body>
+    <input type="range" min="15" max="105">
+    <div>
+        Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs.
+    </div>
+
+
+    <script>
+        let inputel = document.querySelector('input');
+        let divEl = document.querySelector('div');
+        inputel.addEventListener('input', function (event) {
+            divEl.style.fontSize = event.target.value + 'px';
+        })
+    </script>
+</body>
+
+</html>

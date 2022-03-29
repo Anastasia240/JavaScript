@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C:\Users\Anastasia\html\css\JavaScript\3 уровень\5\5.html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="products">
+        <div class="product">
+            <div class="imgWrap">
+                <img src="images/Gif.gif" alt="">
+            </div>
+            <div>Товар 1</div>
+            <div>105.03 р.</div>
+        </div>
+        <div class="product">
+            <div class="imgWrap">
+                <img src="images/Gif.gif" alt="">
+            </div>
+            <div>Товар 2</div>
+            <div>290.49 р.</div>
+        </div>
+        <div class="product">
+            <div class="imgWrap">
+                <img src="images/Gif.gif" alt="">
+            </div>
+            <div>Товар 3</div>
+            <div>989.36 р.</div>
+        </div>
+    </div>
+
+
+    <script>
+        'use strict';
+        setTimeout(function () {
+            let images = document.querySelectorAll('img');
+            for (let i = 0; i < images.length; i++) {
+                images[i].setAttribute('src', `images/${i + 1}.jpg`);
+            }
+        }, 3000);
+    </script>
+</body>
+
+</html>
